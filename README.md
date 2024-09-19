@@ -12,9 +12,9 @@ Aplikacja przedstawiającca zestawienie domowych wydatków
 
 1. Pobierz repozytorium z github:
    ```bash
-   git clone https://github.com/your-repo/home-expenses.git
-   cd home-expenses
-
+   git clone git@github.com:piotrsobala/Modul9.3_zadanie.git
+   cd Modul9.3_zadanie
+   
 2. Stwórz wirtualne środowisko 
    python -m venv "sciezka-do-katalogu"
 
@@ -29,4 +29,3 @@ Aplikacja przedstawiającca zestawienie domowych wydatków
 
 6. Otwórz stronę w przeglądarce
    http://127.0.0.1:5000
-   
