@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj wydatek</title>
+</head>
+<body>
+    <h1>Dodaj nowy wydatek</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=32) }}
+        </p>
+        <p>
+            {{ form.amount.label }}<br>
+            {{ form.amount(size=32) }}
+        </p>
+        <p><input type="submit" value="Add Expense"></p>
+    </form>
+    <a href="{{ url_for('index') }}">Back to List</a>
+</body>
+</html>

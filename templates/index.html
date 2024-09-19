@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budżet domowy</title>
+</head>
+<body>
+    <h1>Wydatki domowe</h1>
+    <a href="{{ url_for('add_expense') }}">Dodaj nowy wydatek</a>
+    <ul>
+        {% for expense in expenses %}
+            <li>
+                {{ expense.name }}: {{ expense.amount }} 
+                <a href="{{ url_for('update_expense', expense_id=loop.index0) }}">Edit</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
